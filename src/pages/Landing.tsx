@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { TopNavBar } from "../components/TopNavBar/TopNavBar";
 import { LandingHeaderSlider } from "../features/Landing/components/LandingHeaderSlider/LandingHeaderSlider";
 import { LandingArrivals } from "../features/Landing/components/LandingArrivals/LandingArrivals";
+import { LandingTwoCardExplore } from "../features/Landing/components/LandingTwoCardExplore/LandingTwoCardExplore";
+import { LandingScrollEfectContainer } from "../features/Landing/components/LandingScrollEffectContainer/LandingScrollEffectContainer";
 
 export const Landing: React.FC = () => {
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -30,7 +32,10 @@ export const Landing: React.FC = () => {
     <>
       <TopNavBar />
       <LandingHeaderSlider />
-      <LandingArrivals overlayRef={overlayRef} />
+      <LandingScrollEfectContainer overlayRef={overlayRef}>
+        <LandingArrivals />
+        <LandingTwoCardExplore />
+      </LandingScrollEfectContainer>
     </>
   );
 };

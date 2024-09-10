@@ -6,16 +6,16 @@ import LocalMallIcon from "@mui/icons-material/LocalMall";
 
 export const TopNavBar: React.FC = () => {
   return (
-    <div className="w-full h-16 flex justify-center items-center fixed z-[2] bg-[transparent] ">
+    <div className="w-full h-16 flex justify-center items-center fixed z-[4] bg-[white] ">
       <div className="absolute left-2.5 top-0">
         <img src={Logo} className="w-36" />
       </div>
       <div className="flex">
         <div className="px-6 font-bold text-[15px]">HOME</div>
-        <div className="px-6 font-bold text-[15px]">HOME</div>
-        <div className="px-6 font-bold text-[15px]">HOME</div>
-        <div className="px-6 font-bold text-[15px]">HOME</div>
-        <div className="px-6 font-bold text-[15px]">HOME</div>
+        <div className="px-6 font-bold text-[15px]">PAGES</div>
+        <div className="px-6 font-bold text-[15px]">SHOP</div>
+        <div className="px-6 font-bold text-[15px]">BLOG</div>
+        <div className="px-6 font-bold text-[15px]">PORTFOLIO</div>
       </div>
       <div className="flex absolute right-0">
         <div className="px-6 font-bold text-[14px]">
